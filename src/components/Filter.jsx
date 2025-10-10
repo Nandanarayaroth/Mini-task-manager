@@ -9,7 +9,7 @@ function Filter() {
     }
 
     return(
-        <div className="border border-gray-300">
+        <div className="border border-gray-300 mx-auto max-w-lg mt-6">
             <h3 className="text-2xl m-2">Filter</h3>
             <input
                 className="m-4"
@@ -24,7 +24,7 @@ function Filter() {
                 className="m-4"
             type="radio" value={"High"} name="filter" checked={selectedPriority === "High"} onChange={handleChangefilter}/><label>High</label>
 
-            <div>{selectedPriority}</div>
+            
         </div>
     )
 }
