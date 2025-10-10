@@ -7,9 +7,17 @@ export default function TaskForm() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Task added:", { title, description, priority });
+    const newTask={
+      id:Date.now(),
+      title,
+      description,
+      priority,
+      status:"To Do"
+    }
+    onAddTask(newTask);
     setTitle("");
     setDescription("");
+    setPriority("Low")
   };
 
   return (
